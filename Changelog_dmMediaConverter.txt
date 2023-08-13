@@ -1,0 +1,176 @@
+﻿2023.02.09 - v2.5.5
+- New stuff!
+- New Chapter Editor!
+  You can drop or copy chapter information form another source. Also you can manaully add chapters.
+  Chaptes autonaming.
+  End times are not needed.
+  Autocreate chapters by divide in X parts or evenly spaced (X seconds) using an offset.
+  It also works in Bulk mode!
+- Split - create split points from embedded chapters
+- Auto gain for audio stream in Bulk mode! An offset can be applied.
+- A new Output window. Some colors added for better view of errors.
+- AV1 STV encoder initial support.
+- New About window.
+- Added Donate button. I encourage you to use it! ;) Thank you! :-)
+- Some bugs fixed.
+
+2022.11.08 - v2.4.6
+- A new metadata import options, useful for bulk convert when you need to preserve creation_time of files for example. It will import metadata from fist added file.
+- Some bugs fixed.
+
+2020.01.05 - v2.4.1
+- Added eac3 audio codec
+- Added set audio bitrate per channel. It is very useful in bulk operation where you can have multiple files with different number of channels. You activate this option in settings. I use it for every job type now and i recommend it turning it on.
+- Added tunes grain and animation  for x265 like x264 had.
+- HW Video decoding. You can squeeze some more fps with this. You can find this in Options.
+- You can now put some custom option in IN and OUT section of ffmpeg commands. In Options those are permanent, in More.. are only for that run. Use the hints for an example.
+- Stream disposition. Now you can set like default or forced flag for a stream (audio, subtitle, etc.) Just right click on that stream and you will see the options. Green means default, bold means forced.
+- Some bugs corrected. Ex. opening the app and had Enabled and Copy columns with width 0.
+- Added experimental Qt5 linux x64 build.
+- Updated ffmpeg version. Using 4.2.1 now. For x64 Linux I also provide an separated ffmpeg archive compiled with libmfx support, Intel Quick Sync. You can use this only on Ubuntu version 19.04 and up. You need also to install the neceslibrarys.
+  sudo apt-get install libmfx1 libmfx-tools
+  On Windows i bundle the up with ffmpeg complied for x64, a little more speed. If you need 32bit then download the provided archive and replace ffmpeg binarys.
+
+2018.12.31 - v2.3.1
+- Long time no see, but i hope it was worth the wait!
+- Image adjustments: brightness, contrast, gamma
+- 3D stereoscopic conversions
+- new -shortest option (defalut off)
+- same UI tewaks for better scaling
+- prevent computer sleep options (Win only)
+- drop support for linux 32bit
+- updated FFMpeg binary with latest version
+- some other stuff that i can't remember :-)
+
+2018.03.15 - v2.2.0
+- Amazon release.
+
+2017.03.30 - v2.1.0
+- A lot. :-)
+- Now you can have special characters in file names on windows and single quote on linux systems.
+- FFMpeg progress output is done on single line.
+- Clear settings when done option (default on).
+- Split:  new Trim mode
+- More... no you could manually specify input file format (in case FFMpeg auto detection fails)
+- NVENC on Linux x64 and Windows.
+- Intel QuickSync on Windows (you must have Intel Media SDK installed). If you manage to get the SDK installed on Linux it should be working also.
+- Lots of bug fixing
+- Updated FFMpeg binary with latest version
+- WinXP - no longer supported. You could use this version with a ffmpeg binary without mfx.
+
+2015.09.11 - v1.8.0
+- Watermark. Doubble click on image to quickly position the logo.
+- First Mac OSX native build. Available on Amazon for 5$.
+- Estimate encoded stream size if the encoding type is CBR.
+- Small UI fixes and refinements.
+- Small bugs fixes.
+- Updated FFMpeg binary with latest version.
+
+2015.05.21 - v1.7.0
+- Burn text based subtitles (not yet picture based).
+- Now you can manually specify additional FFMpeg filters (More) for audio and video streams.
+- On linux it removes automatically "'" from metadata. Workaround for MKVToolNix generated files.
+- Added option for auto add subtitle file (only *.srt for now).
+- Small UI fixes and bugfixing
+- Updated FFMpeg binary with latest version
+
+2015.02.05 - v1.6.0
+- Added checkup for not overwriting the source file.
+- You can assign dmMediaConverter to open media files. (ex. Right clik on file and "Open with..." dmMediaConverter's executable). You can use it like media info.
+- Now bitrate will be shown in kbit/s for better readability.
+- Small UI fixes
+- Updated FFMpeg binary with latest version
+
+2014.10.31 - v1.5.0
+- MAJOR RELEASE
+- Parallel jobs - you can run multiple jobs in the same time
+- Initial job progress implementation
+- Split UI improvements
+- Running under WINE is more robust now (Mac Os)
+- Internal code rework - multithreading
+- Some bugs fixed
+- Updated FFMpeg binary with latest version
+
+2014.10.16 - v1.4.0
+- Internal release
+
+2014.09.29 - v1.3.0
+- Internal release
+
+2014.09.16 - v1.2.0
+- Bug fixing
+- Updated FFMpeg binary with latest version (2.4).
+
+2014.09.12 - v1.1.0
+- ANOTHER BIG RELEASE!
+- x264 and x265 extra settings field (ex. put there bluraycompat, etc)
+- Metadata edit for stream and container.
+- Show complete stream and container info.
+- More output container options.
+- Added Preferences in main menu. Please learn how to use "Latest" option because in the future i will not ship FFmpeg anymore.
+- Added Test Run.
+- Now you can rearrange and remove source files.
+- On failure does not clear settings.
+- Some code rewrites and bug fixing.
+- Updated FFMpeg binary with latest version.
+
+2014.08.21 - v1.0.0
+- MAJOR RELEASE!
+- Stream Profiles! Now you can define profiles for video and audio streams individually.
+  Note: It does not store aspect ratio, this is by design. To apply it just right click on video or audio tab.
+- Bulk Convert mode! Convert multiple files at once.
+- 2 pass encoding for video codecs - Works in Convert and Bulk mode only.
+- Reorder streams - just drag them in desired position
+- DeShake filter - i use default settings for it. It is not impressive. I do not recommend it but you can try it.
+- Creation_time tag - Now you can add or modify this container tag. Useful if you upload media and sort it by date (ex: G+ albums).
+- Picture Settings are preserved when you reopen the form.
+- HiDPI support
+- Play file in external app (default system player) by dbl click on source file.
+- Added all ISO 639-2 language codes :-)
+- Lots of squashed code and UI bugs
+- Added color coded stream types for easy identification.
+- Updated FFMpeg binary with latest version.
+
+2014.07.03 - v0.9.9
+- Workaround for win32 trackbar missing label problem.
+- Drag and drop source files initial support.
+- Small UI fixes.
+- In Split mode now you can select which streams will be prezent in output file.
+- Updated FFMpeg binary with latest version.
+
+2014.05.28 - v0.9.8
+- Config file respects OS user's config directory
+- Added DEB files. Thanks to Alin Andrei from webupd8.org :-)
+
+2014.05.27 - v0.9.7
+- Visual bug corrected.
+
+2014.05.27 - v0.9.6
+- Added support for VP8,VP9,Opus,Vorbis
+
+2014.05.27
+- v0.9.5 - Show start-up hints
+- Updated FFMpeg binarys with latest version.
+
+2014.05.21 - v0.9
+- UI cleanups
+
+2014.05.16 - v0.8
+- Compiled for Linux x86
+
+2014.05.15 - v0.8
+- Added to many things to remember all
+- Stable release
+
+2014.04.25 - v0.7
+- Added audio auto gain detect.
+- Crop detection bug resolved.
+- Some UI cleanups.
+
+2014.04.24 - v0.6
+- The windows build is on the same level as Linux one.
+- Added crop detection button in "Picture settings".
+
+2014.04.17 - v0.5
+- Initial release.
+
