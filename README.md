@@ -1,6 +1,6 @@
 # dmMediaConverter
 ## by Marius Dalacu https://sites.google.com/site/dmsimpleapps/
-dmMediaConverter is a cross-platform FFmpeg frontend (GUI) exposing some of its features. It is intended to be simple and easy to use but also to be able to achieve complex tasks. I have inspired myself from a lot of media converters like Handbrake, WinFF and MkvMergeGui
+dmMediaConverter is a cross-platform FFmpeg frontend (GUI) exposing some of its features. It is intended to be simple and easy to use but also to be able to achieve complex tasks. I have inspired myself from a lot of media converters like Handbrake, WinFF and MkvMergeGui. 
 One feature was lacking from most of them, video stream copy (pass-through), that made me build this.
 
 ![Screenshot 2023-02-10 090745](https://github.com/Donzii/dmMediaConverter/assets/7527643/148ce53c-bff5-42cd-9213-dfc35733fd44)
