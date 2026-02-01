@@ -1,0 +1,18 @@
+Use the latest FFMPEG:
+
+I highly recommend to use ffmpeg binarys from JellyFin a great, open sourced , media library.
+Windows:
+https://repo.jellyfin.org/releases/server/windows/stable/ffmpeg/jellyfin-ffmpeg-portable_win64.zip #deprecated
+https://repo.jellyfin.org/?path=/ffmpeg/windows/latest-7.x/win64 #fresh 01-2026
+
+Download  the zip file and extract it in the folder indicated in "Options/Latest".
+
+
+Linux:
+https://repo.jellyfin.org/releases/server/ubuntu/stable/ #deprecated
+https://repo.jellyfin.org/?path=/ffmpeg/ubuntu/latest-7.x/amd64 #fresh 01-2026
+
+Download and install the appropriate deb file and create simlinks so the ffmpeg and ffprobe appear in the folder indicated in "Options/Latest".
+sudo dpkg -i ~/Downloads/jellyfin-ffmpeg5_5.1.2-7-kinetic_amd64.deb
+ln -sf /usr/lib/jellyfin-ffmpeg/ffmpeg ~/.config/dmMediaConverter/ffmpeg
+ln -sf /usr/lib/jellyfin-ffmpeg/ffprobe ~/.config/dmMediaConverter/ffprobe
